@@ -21,18 +21,20 @@ The following are my focus points:
 Deadline: 30th July. 6 Days. Intense focus expected.
 
 
-### Important Steps
+### Steps For BackEnd: (done before frontend)
 
-0. Setup Git Repo. 
-1. In backend folder:
-    1. npm init -y (Add package.json)
-    2. adding "type": "module" to package.json.
-    3. Install Express and Nodemon: npm i express nodemon. (Express for framework; Nodemon for auto-restarting server)
-    4. Adding scripts: npm start, npm run dev etc.
-    5. Add first route. A simple app.get('', () => {}) works.
-    6. Connect to MongoDB. Use the connection string from mongoDB site while creating DB, create a variable in config.js and then proceed. 
-    7. Create Models from Schema.
-    8. Implement CRUD Operations.
-    9. Refactor Code: Add Express Router to avoid monolithic index.js file. (for eg: 8 Models, 5 Routes each would make index.js very huge)
-    10. Allow CORS. For this, install cors library. Then use middleware for handling cors in index.js (app.use(cors(...)))
-2. 
+1. npm init -y (Add package.json)
+2. adding "type": "module" to package.json.
+3. Install Express and Nodemon: npm i express nodemon. (Express for framework; Nodemon for auto-restarting server)
+4. Adding scripts: npm start, npm run dev etc.
+5. Add first route. A simple app.get('', () => {}) works.
+6. Connect to MongoDB. Use the connection string from mongoDB site while creating DB, create a variable in config.js and then proceed. 
+7. Create Models from Schema.
+8. Implement CRUD Operations.
+9. Refactor Code: Add Express Router to avoid monolithic index.js file. (for eg: 8 Models, 5 Routes each would make index.js very huge)
+10. Allow CORS. For this, install cors library. Then use middleware for handling cors in index.js (app.use(cors(...)))
+
+
+### Steps For FrontEnd: 
+
+1. Initialize React project. (Using Vite or npm create-react-app).
