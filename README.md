@@ -28,5 +28,7 @@ Deadline: 30th July. 6 Days. Intense focus expected.
     1. npm init -y (Add package.json)
     2. adding "type": "module" to package.json.
     3. Install Express and Nodemon: npm i express nodemon. (Express for framework; Nodemon for auto-restarting server)
-    4. Adding scripts: npm start, npm dev etc.
+    4. Adding scripts: npm start, npm run dev etc.
+    5. Add first route. A simple app.get('', () => {}) works.
+    6. Connect to MongoDB. Use the connection string from mongoDB site while creating DB, create a variable in config.js and then proceed. 
 2. 
