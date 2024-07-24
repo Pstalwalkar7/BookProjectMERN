@@ -34,4 +34,5 @@ Deadline: 30th July. 6 Days. Intense focus expected.
     7. Create Models from Schema.
     8. Implement CRUD Operations.
     9. Refactor Code: Add Express Router to avoid monolithic index.js file. (for eg: 8 Models, 5 Routes each would make index.js very huge)
+    10. Allow CORS. For this, install cors library. Then use middleware for handling cors in index.js (app.use(cors(...)))
 2. 

@@ -2,18 +2,34 @@ import express from 'express';
 import mongoose from 'mongoose';
 import { PORT, mongoDBURL } from './config.js';
 import booksRoute from './routes/booksRoute.js';
+import cors from 'cors';
 
 const app = express();
 
 // Middleware to parse request body.
 app.use(express.json());
 
+// Middleware for CORS Policy
+// Option 1: Allows all, no restrictions
+//app.use(cors())
+// Option 2: Customized control; Better
+app.use(cors(
+    {
+        origin: "http://localhost:3000",    // whitelisted origins. 
+        methods: ['GET', 'POST', 'PUT', 'DELETE'],
+        allowedHeaders: ['Content-Type']        
+    }
+));
+
+
+// Using Middleware for /books. Pass booksRoute. Automatically prefix added, so path changes in the respective js file (remove /book/ from each) 
+app.use('/books', booksRoute);   
+
 app.get("/", (request, response) => {
     console.log(request);
     return response.status(234).send("Welcome To MERN Stack Tutorial!");   // status(204).send(x) does not show up on screen.
 });
 
-app.use('/books', booksRoute);   // Using Middleware for /books. Pass booksRoute. Automatically prefix added, so path changes in the respective js file (remove /book/ from each) 
 
 mongoose
     .connect(mongoDBURL)
