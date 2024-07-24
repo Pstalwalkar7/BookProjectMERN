@@ -19,3 +19,14 @@ The following are my focus points:
 ### Timeline
 
 Deadline: 30th July. 6 Days. Intense focus expected.
+
+
+### Important Steps
+
+0. Setup Git Repo. 
+1. In backend folder:
+    1. npm init -y (Add package.json)
+    2. adding "type": "module" to package.json.
+    3. Install Express and Nodemon: npm i express nodemon. (Express for framework; Nodemon for auto-restarting server)
+    4. Adding scripts: npm start, npm dev etc.
+2. 
