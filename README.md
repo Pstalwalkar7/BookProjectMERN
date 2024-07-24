@@ -31,6 +31,7 @@ Deadline: 30th July. 6 Days. Intense focus expected.
     4. Adding scripts: npm start, npm run dev etc.
     5. Add first route. A simple app.get('', () => {}) works.
     6. Connect to MongoDB. Use the connection string from mongoDB site while creating DB, create a variable in config.js and then proceed. 
-    7. Create Models from Schema
-    8. Implement CRUD Operations
+    7. Create Models from Schema.
+    8. Implement CRUD Operations.
+    9. Refactor Code: Add Express Router to avoid monolithic index.js file. (for eg: 8 Models, 5 Routes each would make index.js very huge)
 2. 
