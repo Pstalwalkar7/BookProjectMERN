@@ -1,6 +1,6 @@
 import express from 'express';
 import mongoose from 'mongoose';
-import { PORT, mongoDBURL } from './config.js';
+import { PORT, mongoDBURL, CORS } from './config.js';
 import booksRoute from './routes/booksRoute.js';
 import cors from 'cors';
 
@@ -15,7 +15,7 @@ app.use(express.json());
 // Option 2: Customized control; Better
 app.use(cors(
     {
-        origin: "http://localhost:3000",    // whitelisted origins. 
+        origin: CORS,    // whitelisted origins. 
         methods: ['GET', 'POST', 'PUT', 'DELETE'],
         allowedHeaders: ['Content-Type']        
     }

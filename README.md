@@ -19,6 +19,9 @@ The following are my focus points:
 ### Timeline
 
 Deadline: 30th July. 6 Days. Intense focus expected.
+Actual:
+25th July, 2 AM: Backend Completed. (Within 20 hours; with breaks and chilling as one does during vacation).
+
 
 
 ### Steps For BackEnd: (done before frontend)
