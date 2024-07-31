@@ -1,6 +1,7 @@
 ## CRUD Operations in a virtual book store.
 
 Learn MERN stack: Learning by Doing.
+(https://www.youtube.com/watch?v=-42K44A1oMA)
 
 
 ### Purpose of the project
@@ -40,4 +41,6 @@ Actual:
 
 ### Steps For FrontEnd: 
 
-1. Initialize React project. (Using Vite or npm create-react-app).
+1. Initialize React project. (Using Vite or npm create-react-app). Install Extensions: react code snippets (rafce functionality).
+2. Tailwind CSS: SETUP Tailwind CSS (Framework Guides Steps, follow React steps): https://tailwindcss.com/docs/installation/framework-guides
+3. Adding SPA(SinglePageApplication) + Routes: Install react-dom-router. Use <BrowserRouter> tags in main.jsx (Containing the <App/>). Then import {Routes, Route} in App.jsx. Then Proceed to define <Routes> and <Route> in App.jsx.
