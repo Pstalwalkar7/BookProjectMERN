@@ -43,4 +43,4 @@ Actual:
 
 1. Initialize React project. (Using Vite or npm create-react-app). Install Extensions: react code snippets (rafce functionality).
 2. Tailwind CSS: SETUP Tailwind CSS (Framework Guides Steps, follow React steps): https://tailwindcss.com/docs/installation/framework-guides
-3. Adding SPA(SinglePageApplication) + Routes: Install react-dom-router. Use <BrowserRouter> tags in main.jsx (Containing the <App>). Then import {Routes, Route} in App.jsx. Then Proceed to define <Routes> and <Route> in App.jsx.
+3. Adding SPA(SinglePageApplication) + Routes: Install react-dom-router. Use <BrowserRouter> tags in main.jsx (Containing the App). Then import {Routes, Route} in App.jsx. Then Proceed to define <Routes> and <Route> in App.jsx.
