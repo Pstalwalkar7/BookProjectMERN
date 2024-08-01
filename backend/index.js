@@ -11,15 +11,15 @@ app.use(express.json());
 
 // Middleware for CORS Policy
 // Option 1: Allows all, no restrictions
-//app.use(cors())
+app.use(cors())
 // Option 2: Customized control; Better
-app.use(cors(
-    {
-        origin: CORS,    // whitelisted origins. 
-        methods: ['GET', 'POST', 'PUT', 'DELETE'],
-        allowedHeaders: ['Content-Type']        
-    }
-));
+// app.use(cors(
+//     {
+//         origin: CORS,    // whitelisted origins. 
+//         methods: ['GET', 'POST', 'PUT', 'DELETE'],
+//         allowedHeaders: ['Content-Type']        
+//     }
+// ));
 
 
 // Using Middleware for /books. Pass booksRoute. Automatically prefix added, so path changes in the respective js file (remove /book/ from each) 
